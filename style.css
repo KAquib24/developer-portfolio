@@ -1017,6 +1017,64 @@ p.lead {
 }
 
 /* =========================
+   RESUME SECTION
+========================= */
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.resume-summary p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.resume-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.highlight-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  transition: all var(--transition-base);
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.highlight-card h3 {
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+.highlight-card ul {
+  padding-left: 1.2rem;
+}
+
+.highlight-card li {
+  list-style: disc;
+  color: var(--color-text-light);
+  margin-bottom: 0.5rem;
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-lg);
+}
+
+
+/* =========================
    BUTTONS
 ========================= */
 .btn {
